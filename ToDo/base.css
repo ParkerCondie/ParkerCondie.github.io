@@ -1,0 +1,23 @@
+.ToDo {
+    color: #3456ff;
+    text-align:center;
+    font-size: 50px;
+    
+}
+
+  .list {
+      color: #3456ff;
+      font-size: 25px;
+      
+  }
+  
+.background {
+  background-image: url(http://wallpapershidef.com/wp-content/gallery/website-background-images-free-download/website-background-wincustomize-explore-clouds-284048.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input {
+    width: 350px;
+    height: 50px;
+    font-size: 32px;
+}

@@ -1,0 +1,20 @@
+<html>
+    <head class=header>
+        <li><a href="project.html">Back</a></li>
+        Number Generator!
+        <link rel ="stylesheet" href="num.css">
+    </head>
+    <body class="background">
+    <h1>
+        <input type="submit" onclick="random()" value="Random Number!">
+    </h1>
+    </body>
+    <script>
+    function random(){
+        var x = Math.random()
+        var z = x * 20;
+        var y = Math.floor(z)
+        alert("Your number is " + y + "!")
+    }
+    </script>
+</html>

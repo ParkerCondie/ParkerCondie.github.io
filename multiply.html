@@ -7,7 +7,8 @@
     </head>
     <body class="background3">
     <h1>
-        <input type="submit" onclick="random()" value="Multiply!">
+        <input type="submit" onclick="random()" value="Multiply two Numbers!">
+        <input type="submit" onclick="random2()" value="Multiply two big Numbers!">
     </h1>
     </body>
     <script>
@@ -17,6 +18,15 @@
         var y = Math.floor(z)
         var a = Math.random()
         var b = a * 20;
+        var c = Math.floor(b)
+        alert("Your Numbers are " + y + " and " + c + " and multiplied together these are " + y*c + "!"  )
+    }
+    function random2(){
+        var x = Math.random()
+        var z = x * 200;
+        var y = Math.floor(z)
+        var a = Math.random()
+        var b = a * 200;
         var c = Math.floor(b)
         alert("Your Numbers are " + y + " and " + c + " and multiplied together these are " + y*c + "!"  )
     }

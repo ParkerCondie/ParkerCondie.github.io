@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf=8">
+        <style type="text/css">
+            #posts {
+                width: 90%;
+                height: 700px;
+                margin: auto
+            }
+        </style>
+    </head>
+    <body onload="return bgcol()">
+        <div id="posts">
+        </div>
+        <script type="text/javascript">
+            function bgcol() { 
+                var color = '#';
+                var letters = ['612345','213456','653241','123456','FFFF00','00FFFF','FF00FF','FFFF00']; 
+                color += letters[Math.floor(Math.random() * letters.length)];
+                document.getElementById('posts').style.background = color;
+            }
+        </script>
+    </body>
+</html>

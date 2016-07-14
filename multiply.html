@@ -7,8 +7,12 @@
     </head>
     <body class="background3">
     <h1>
-        <input type="submit" onclick="random()" value="Multiply two Numbers!">
-        <input type="submit" onclick="random2()" value="Multiply two big Numbers!">
+        <input type="submit" onclick="random()" value="Multiply two random Numbers!">
+        <input type="submit" onclick="random2()" value="Multiply two random big Numbers!">
+        <input type="submit" onclick="random3()" value="Multiply two random small Numbers!">
+        <input type="submit" onclick="chosen()" value="Multiply your own numbers!">
+        <input type="submit" onclick="division()" value="Divide your own numbers!">
+        <input type="submit" onclick="square()" value="Square a number!">
     </h1>
     </body>
     <script>
@@ -29,6 +33,34 @@
         var b = a * 200;
         var c = Math.floor(b)
         alert("Your Numbers are " + y + " and " + c + " and multiplied together these are " + y*c + "!"  )
+    }
+    function random3(){
+        var x = Math.random()
+        var z = x * 10;
+        var y = Math.floor(z)
+        var a = Math.random()
+        var b = a * 10;
+        var c = Math.floor(b)
+        alert("Your Numbers are " + y + " and " + c + " and multiplied together these are " + y*c + "!"  )
+    }
+    function chosen(){
+       var x=prompt("Enter your first number")
+       parseInt("x");
+       var y=prompt("Enter your second number")
+       parseInt("x");
+       alert("Your product is " + x*y);
+    }
+    function division(){
+        var x=prompt("Enter your first number")
+       parseInt("x");
+       var y=prompt("Enter your second number")
+       parseInt("x");
+       alert("Your quotient is " + x/y);
+    }
+    function square(){
+         var x=prompt("Enter your number")
+       parseInt("x");
+       alert("Your product is " + x*x);
     }
     </script>
 </html>

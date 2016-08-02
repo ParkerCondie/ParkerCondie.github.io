@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i}; 
+    return i;
+}
+function startTime1() {
+    var todayc = new Date();
+    var hc = todayc.getHours();
+    var mc = todayc.getMinutes();
+    var sc = todayc.getSeconds();
+    mc = checkTime(mc);
+    sc = checkTime(sc);
+    document.getElementById('txt1').innerHTML =
+    hc + 1 + ":" + mc + ":" + sc;
+    var tc = setTimeout(startTime1, 500);
+}
+function checkTime1(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+function startTime2() {
+    var todayp = new Date();
+    var hp = todayp.getHours();
+    var mp = todayp.getMinutes();
+    var sp = todayp.getSeconds();
+    mp = checkTime(mp);
+    sp = checkTime(sp);
+    document.getElementById('txt2').innerHTML =
+    hp + -1 + ":" + mp + ":" + sp;
+    var tp = setTimeout(startTime2, 500);
+}
+function checkTime1(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+function startTime3() {
+    var todaye = new Date();
+    var he = todaye.getHours();
+    var me = todaye.getMinutes();
+    var se = todaye.getSeconds();
+    me = checkTime(me);
+    se = checkTime(se);
+    document.getElementById('txt3').innerHTML =
+    he + 2 + ":" + me + ":" + se;
+    var te = setTimeout(startTime3, 500);
+}
+function checkTime1(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+function startTime4() {
+    var todaywe = new Date();
+    var hwe = todaywe.getHours();
+    var mwe = todaywe.getMinutes();
+    var swe = todaywe.getSeconds();
+    mwe = checkTime(mwe);
+    swe = checkTime(swe);
+    document.getElementById('txt4').innerHTML =
+    hwe + 6 + ":" + mwe + ":" + swe;
+    var twe = setTimeout(startTime4, 500);
+}
+function checkTime1(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+function startTimes() {
+    startTime();
+    startTime1();
+    startTime2();
+    startTime3();
+    startTime4();
+}
+</script>
+</head>
+
+<body onload="startTimes()">
+<h2 class = "central"> Pacific Time</h2>
+<div id="txt2"></div>
+<h1 class = "central"> Mountain Time</h1>
+<div id="txt"></div>
+<h1 class = "central"> Central Time</h1>
+<div id="txt1"></div>
+<h1 class= "central"> Eastern Time</h1>
+<div id="txt3"></div>
+<h1 class="central"> Western European Time</h1>
+<div id="txt4"></div>
+
+<link rel="stylesheet" href="final.css">
+</body>
+</html>

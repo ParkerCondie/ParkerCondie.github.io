@@ -78,27 +78,81 @@ function checkTime1(i) {
     if (i < 10) {i = "0" + i};  
     return i;
 }
+function startTime5() {
+    var todayce = new Date();
+    var hce = todayce.getHours();
+    var mce = todayce.getMinutes();
+    var sce = todayce.getSeconds();
+    mce = checkTime(mce);
+    sce = checkTime(sce);
+    document.getElementById('txt5').innerHTML =
+    hce + 7 + ":" + mce + ":" + sce;
+    var tce = setTimeout(startTime5, 500);
+}
+function checkTime1(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+function startTime6() {
+    var todayee = new Date();
+    var hee = todayee.getHours();
+    var mee = todayee.getMinutes();
+    var see = todayee.getSeconds();
+    mee = checkTime(mee);
+    see = checkTime(see);
+    document.getElementById('txt6').innerHTML =
+    hee + 8 + ":" + mee + ":" + see;
+    var tee = setTimeout(startTime6, 500);
+}
+function checkTime1(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+function startTime7() {
+    var todayyr = new Date();
+    var hyr = todayyr.getHours();
+    var myr = todayyr.getMinutes();
+    var syr = todayyr.getSeconds();
+    myr = checkTime(myr);
+    syr = checkTime(syr);
+    document.getElementById('txt7').innerHTML =
+    hyr + 9 + ":" + myr + ":" + syr;
+    var tyr = setTimeout(startTime7, 500);
+}
+function checkTime1(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
 function startTimes() {
     startTime();
     startTime1();
     startTime2();
     startTime3();
     startTime4();
+    startTime5();
+    startTime6();
+    startTime7();
 }
 </script>
 </head>
 
 <body onload="startTimes()">
 <h2 class = "central"> Pacific Time</h2>
-<div id="txt2"></div>
+<div class = "timezone" id="txt2"></div>
 <h1 class = "central"> Mountain Time</h1>
-<div id="txt"></div>
+<div class = "timezone" id="txt"></div>
 <h1 class = "central"> Central Time</h1>
-<div id="txt1"></div>
+<div class = "timezone" id="txt1"></div>
 <h1 class= "central"> Eastern Time</h1>
-<div id="txt3"></div>
+<div class = "timezone" id="txt3"></div>
 <h1 class="central"> Western European Time</h1>
-<div id="txt4"></div>
+<div class = "timezone" id="txt4"></div>
+<h1 class="central"> Central European Time</h1>
+<div class = "timezone" id="txt5"></div>
+<h1 class="central"> Eastern European Time</h1>
+<div class = "timezone" id="txt6"></div>
+<h1 class="central"> Moscow Time</h1>
+<div class = "timezone" id="txt7"></div>
 
 <link rel="stylesheet" href="final.css">
 </body>
